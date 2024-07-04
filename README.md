@@ -12,16 +12,9 @@ This project implements a classic memory game where players flip cards to find m
 
 ## Installation
 
-To run the Memory Game locally, follow these steps:
+To run the Memory Game, click on the following link:
 
-1. Clone the repository:
-
-```
-   git clone <repository-url>
-   cd <repository-directory>
-```
-
-2. Open the `index.html` file in your web browser.
+1. [Go to the game](https://mirmahas.github.io/project-game-memory/)
 
 ## Usage
 
