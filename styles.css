@@ -1,0 +1,91 @@
+/*body*/
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsla(43, 63%, 43%, 0.856);
+  margin: 0;
+}
+/*title game*/
+h1 {
+  font-family: cursive;
+}
+h2 {
+  font-family: cursive;
+}
+/*Buttons start and restar*/
+#startGameButton,
+#restartGameButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#startGameButton:hover,
+#restartGameButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#startGameButton:active,
+#restartGameButton:active {
+  background-color: #003f7f;
+  transform: scale(0.95);
+}
+
+.game-container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #007bff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+
+.card.flipped,
+.card.matched {
+  background-color: #fff;
+  color: #000;
+  cursor: default;
+}
+
+.card.matched {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.end-screen {
+  display: none;
+  text-align: center;
+}
+
+.end-screen h2 {
+  margin: 20px 0;
+}
